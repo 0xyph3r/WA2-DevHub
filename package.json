@@ -1,0 +1,53 @@
+{
+  "name": "@0xyph3r/wa2",
+  "version": "0.1.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "DevHub for AI coding agents (Claude Code, Codex, Gemini CLI, Cursor, any tool with hooks): a live infinite canvas of your project, the agents working on it, Git branches and the running app.",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "wa2": "server/index.mjs",
+    "wa2-adapter": "adapters/stdin.mjs",
+    "wa2-emit": "adapters/emit.mjs"
+  },
+  "scripts": {
+    "start": "node server/index.mjs --repo . --open",
+    "test": "node --test \"test/*.test.mjs\""
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "server",
+    "client",
+    "hooks",
+    "adapters",
+    ".claude-plugin/plugin.json",
+    ".claude-plugin/marketplace.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0xyph3r/WA2-DevHub.git"
+  },
+  "homepage": "https://github.com/0xyph3r/WA2-DevHub#readme",
+  "bugs": {
+    "url": "https://github.com/0xyph3r/WA2-DevHub/issues"
+  },
+  "keywords": [
+    "agents",
+    "claude-code",
+    "codex",
+    "gemini-cli",
+    "cursor",
+    "visualization",
+    "canvas",
+    "devhub",
+    "developer-tools",
+    "ai-agents",
+    "claude-code-plugin"
+  ]
+}

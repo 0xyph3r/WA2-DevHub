@@ -1,0 +1,21 @@
+{
+  "name": "wa2",
+  "version": "0.1.0",
+  "description": "DevHub for AI coding agents (Claude Code, Codex, Gemini CLI, Cursor, any tool with hooks): a live infinite canvas of your project, the agents working on it, Git branches and the running app.",
+  "author": {
+    "name": "0xyph3r",
+    "url": "https://github.com/0xyph3r"
+  },
+  "license": "MIT",
+  "keywords": [
+    "agents",
+    "codex",
+    "gemini-cli",
+    "cursor",
+    "visualization",
+    "canvas",
+    "devhub"
+  ],
+  "homepage": "https://github.com/0xyph3r/WA2-DevHub",
+  "repository": "https://github.com/0xyph3r/WA2-DevHub"
+}

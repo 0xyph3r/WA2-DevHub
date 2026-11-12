@@ -1,0 +1,19 @@
+{
+  "name": "wa2",
+  "owner": {
+    "name": "0xyph3r",
+    "url": "https://github.com/0xyph3r"
+  },
+  "description": "DevHub for AI coding agents (Claude Code, Codex, Gemini CLI, Cursor, any tool with hooks): a live infinite canvas of your project, the agents working on it, Git branches and the running app.",
+  "plugins": [
+    {
+      "name": "wa2",
+      "source": "./",
+      "description": "DevHub for AI coding agents (Claude Code, Codex, Gemini CLI, Cursor, any tool with hooks): a live infinite canvas of your project, the agents working on it, Git branches and the running app."
+    }
+  ],
+  "metadata": {
+    "description": "DevHub for AI coding agents (Claude Code, Codex, Gemini CLI, Cursor, any tool with hooks): a live infinite canvas of your project, the agents working on it, Git branches and the running app.",
+    "version": "0.1.0"
+  }
+}

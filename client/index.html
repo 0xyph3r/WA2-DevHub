@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WA2 - DevHub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<script>try { var t = localStorage.getItem('wa2.theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}</script>
+<link rel="stylesheet" href="/styles.css">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<script type="importmap">
+{ "imports": {
+  "three": "/vendor/three/three.module.js",
+  "three/addons/": "/vendor/three/addons/"
+} }
+</script>
+</head>
+<body>
+<div class="app" id="app">
+
+  <header class="topbar">
+    <button class="icon-btn" id="btnMenu" title="Panel: navigation, agents, activity, tasks, git, metrics, tree (Ctrl+B)"><span data-icon="menu"></span></button>
+    <div class="brand">
+      <span class="brand-logo" data-icon="cube"></span>
+      <div class="brand-name">WA2 <span class="brand-sub">DevHub</span></div>
+    </div>
+    <button class="selector" id="projectSelector" title="Watched project · settings">
+      <span class="selector-value" id="projectName">-</span><span class="chev" data-icon="chevron-down"></span>
+    </button>
+    <label class="search">
+      <span data-icon="search"></span>
+      <input id="search" type="search" placeholder="Search a module, a file… (Enter to jump)" autocomplete="off">
+      <kbd>⌘K</kbd>
+    </label>
+    <div class="live" id="live" title="Agent activity"><span class="live-dot" id="liveDot"></span><span id="liveText">waiting</span></div>
+    <div class="top-actions">
+      <button class="icon-btn" id="btnFollow" title="Follow agents: when an agent writes a file, the canvas opens and selects it as if you had clicked"><span data-icon="eye"></span></button>
+      <button class="icon-btn" id="btnStack" data-view="stack" title="Exploded view: Frontend / Backend / … layers in 3D"><span data-icon="layers"></span></button>
+      <button class="icon-btn" id="btnCity" data-view="city" title="Full 3D architecture (city)"><span data-icon="modules"></span></button>
+      <button class="icon-btn" id="btnFullscreen" title="Fullscreen"><span data-icon="fullscreen"></span></button>
+    </div>
+  </header>
+
+  <aside class="sidebar hidden" id="sidebar"></aside>
+
+  <main class="stage" id="stage">
+    <div class="view" id="view-canvas"></div>
+    <div class="view hidden" id="view-stack"></div>
+    <div class="view hidden" id="view-city"></div>
+  </main>
+
+  <div class="toast hidden" id="toast"></div>
+  <div class="modal hidden" id="modal">
+    <div class="modal-card">
+      <div class="modal-head"><h3 id="modalTitle">Settings</h3><button class="icon-btn" id="modalClose"><span data-icon="close"></span></button></div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+</div>
+<script type="module" src="/app.js"></script>
+</body>
+</html>
